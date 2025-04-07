@@ -4,7 +4,7 @@ function Privacy() {
   return (
     <div className="bg-black text-white min-h-screen px-4 py-12">
       <div className="max-w-5xl mx-auto text-center">
-        <h1 className="text-4xl font-bold text-[#C6962C] mb-6">Terms & Conditions</h1>
+        <h1 className="text-4xl font-bold text-[#C6962C] mb-6">Privacy Policy</h1>
         <p className="text-gray-300 mb-6">Please review the full document below:</p>
         <div className="border-2 border-[#C6962C] rounded-xl overflow-hidden">
           <iframe
