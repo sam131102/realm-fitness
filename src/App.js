@@ -7,6 +7,8 @@ import Contact from "./pages/Contact";
 import Memberships from "./pages/Memberships";
 import Menu from "./pages/Menu";
 import Terms from './pages/Terms';
+import Terms from './pages/Privacy';
+import Terms from './pages/Accessibility';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path="/memberships" element={<Memberships/>} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/accessibility" element={<Accessibility />} />
         </Routes>
       </Layout>
     </Router>
