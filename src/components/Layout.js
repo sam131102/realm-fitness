@@ -77,7 +77,7 @@ function Layout({ children }) {
                     </div>
                 </div>
                 <div className="container mx-auto mt-4 text-center text-sm text-[#C6962C]">
-                    <Link to="/accessibilty" className="mx-2 hover:text-white transition duration-300">Accessibility Statement</Link> |
+                    <Link to="/accessibility" className="mx-2 hover:text-white transition duration-300">Accessibility Statement</Link> |
                     <Link to="/privacy" className="mx-2 hover:text-white transition duration-300">Privacy Policy</Link> |
                     <Link to="/terms" className="mx-2 hover:text-white transition duration-300">Terms of Service</Link>
                 </div>
