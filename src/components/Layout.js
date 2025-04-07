@@ -68,7 +68,7 @@ function Layout({ children }) {
                         <p className="mb-2 font-semibold text-[#C6962C] text-xl">Follow Us</p>
                         <div className="flex justify-center space-x-4">
                             <a href="https://www.instagram.com/therealmfitnesskelowna" target="_blank" rel="noopener noreferrer">
-                                <img src="/Instagram.png" alt="Instagram" className="h-12 w-12 hover:scale-110 transition" />
+                                <img src="/instagram.png" alt="Instagram" className="h-12 w-12 hover:scale-110 transition" />
                             </a>
                             <a href="https://www.tiktok.com/@therealmfitnesskelowna" target="_blank" rel="noopener noreferrer">
                                 <img src="/Tiktok.png" alt="TikTok" className="h-12 w-12 hover:scale-110 transition" />
