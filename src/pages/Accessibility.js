@@ -8,7 +8,7 @@ function Terms() {
         <p className="text-gray-300 mb-6">Please review the full document below:</p>
         <div className="border-2 border-[#C6962C] rounded-xl overflow-hidden">
           <iframe
-            src="/accessibilty.pdf"
+            src="/accessibility.pdf"
             width="100%"
             height="800px"
             title="Terms and Conditions"
