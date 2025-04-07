@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Terms() {
+function Accessibility() {
   return (
     <div className="bg-black text-white min-h-screen px-4 py-12">
       <div className="max-w-5xl mx-auto text-center">
@@ -20,4 +20,4 @@ function Terms() {
   );
 }
 
-export default Terms;
+export default Accessibility;
