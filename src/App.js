@@ -7,8 +7,8 @@ import Contact from "./pages/Contact";
 import Memberships from "./pages/Memberships";
 import Menu from "./pages/Menu";
 import Terms from './pages/Terms';
-import Terms from './pages/Privacy';
-import Terms from './pages/Accessibility';
+import Privacy from './pages/Privacy';
+import Accessibility from './pages/Accessibility';
 
 function App() {
   return (
