@@ -203,7 +203,7 @@ function Home() {
                         <h2 className="text-2xl font-bold text-[#C6962C] mb-2">{plan.title}</h2>
                         <p className="text-xl font-semibold mb-4">{plan.price}</p>
                         <ul className="space-y-1 text-sm text-gray-300">
-                          {plan.details.map((opt, i) => (
+                          {plan.options.map((opt, i) => (
                             <li key={i}>{opt}</li>
                           ))}
                         </ul>
