@@ -4,16 +4,16 @@ function Memberships() {
   const plans = [
     {
       title: "1 Year Membership",
-      price: "$1,000 Paid In Full",
+      price: "$850 Paid In Full",
       options: [
         "Two Payment Option:",
-        "• $500 at sign-up",
-        "• $500 after 30 days"
+        "• $425 at sign-up",
+        "• $425 after 30 days"
       ]
     },
     {
       title: "12-Month Membership",
-      price: "$99.99/month",
+      price: "$85/month",
       options: [
         "• 12-Month Commitment",
         "• Monthly Payments"
@@ -21,7 +21,7 @@ function Memberships() {
     },
     {
       title: "1-Month Membership",
-      price: "$120",
+      price: "$105",
       options: [
         "• No Commitment",
         "• $15 One-time Fob Fee"
@@ -29,16 +29,14 @@ function Memberships() {
     },
     {
       title: "Senior Memberships",
-      price: "$700 Paid In Full or $70/month",
+      price: "$70/month",
       options: [
-        "Two Payment Option:",
-        "• $350 at sign-up",
-        "• $350 after 30 days"
+        "• Month-to-Month"
       ]
     },
     {
       title: "Student Membership",
-      price: "$85/month",
+      price: "$73/month",
       options: [
         "• 6-Month Commitment Required"
       ]

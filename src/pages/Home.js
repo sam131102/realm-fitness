@@ -24,57 +24,52 @@ function Home() {
     ];
 
     const plans = [
-        {
-          title: "1 Year Membership",
-          price: "$1,000",
-          details: [
-            "Paid In Full: $1,000",
-            "Two Payment Option:",
-            "Initial: $500 (at sign-up)",
-            "Second: $500 (30 days later)"
-          ]
-        },
-        {
-          title: "12-Month Membership",
-          price: "$99.99 / month",
-          details: [
-            "12-Month Commitment",
-            "Monthly Payments"
-          ]
-        },
-        {
-          title: "1-Month Membership",
-          price: "$120",
-          details: [
-            "1-Month No Commitment",
-            "1-time Fob Fee $15"
-          ]
-        },
-        {
-          title: "Senior Memberships",
-          price: "$700 or $70 / month",
-          details: [
-            "Paid In Full: $700",
-            "Two Payment Option:",
-            "Initial: $350 (at sign-up)",
-            "Second: $350 (30 days later)",
-            "Monthly Plan: $70 / month"
-          ]
-        },
-        {
-          title: "Student Membership",
-          price: "$85 / month",
-          details: [
-            "6-Month Commitment Required"
-          ]
-        },
-        {
-          title: "10-Day Pass",
-          price: "$150",
-          details: [
-            "10 Visit Punch Pass"
-          ]
-        }
+      {
+        title: "1 Year Membership",
+        price: "$850 Paid In Full",
+        options: [
+          "Two Payment Option:",
+          "• $425 at sign-up",
+          "• $425 after 30 days"
+        ]
+      },
+      {
+        title: "12-Month Membership",
+        price: "$85/month",
+        options: [
+          "• 12-Month Commitment",
+          "• Monthly Payments"
+        ]
+      },
+      {
+        title: "1-Month Membership",
+        price: "$105",
+        options: [
+          "• No Commitment",
+          "• $15 One-time Fob Fee"
+        ]
+      },
+      {
+        title: "Senior Memberships",
+        price: "$70/month",
+        options: [
+          "• Month-to-Month"
+        ]
+      },
+      {
+        title: "Student Membership",
+        price: "$73/month",
+        options: [
+          "• 6-Month Commitment Required"
+        ]
+      },
+      {
+        title: "10-Day Pass",
+        price: "$150",
+        options: [
+          "• 10 Visit Punch Pass"
+        ]
+      }
     ];
     const scrollRef = useRef();
 
