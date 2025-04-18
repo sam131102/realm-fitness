@@ -70,9 +70,6 @@ function Layout({ children }) {
                             <a href="https://www.instagram.com/therealmfitnesskelowna" target="_blank" rel="noopener noreferrer">
                                 <img src="/instagram.png" alt="Instagram" className="h-12 w-12 hover:scale-110 transition" />
                             </a>
-                            <a href="https://www.tiktok.com/@therealmfitnesskelowna" target="_blank" rel="noopener noreferrer">
-                                <img src="/Tiktok.png" alt="TikTok" className="h-12 w-12 hover:scale-110 transition" />
-                            </a>
                         </div>
                     </div>
                 </div>
