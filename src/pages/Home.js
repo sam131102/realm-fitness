@@ -111,7 +111,7 @@ function Home() {
               <div className="max-w-6xl mx-auto flex flex-col items-center text-center py-16 px-2">
                     {/* About Us */}
                     <div className="mb-12">
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#C6962C] mb-6">More Than Just a Gym</h2>
+                        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#C6962C] mb-6">More Than Just a Gym</h1>
                         <p className="text-lg sm:text-xl leading-relaxed max-w-4xl mx-auto">
                             The Realm Kelowna is where passion meets purpose. This isn’t just a gym — it’s your second home. 
                             A one-of-a-kind atmosphere filled with driven individuals, luxury equipment, and a strong sense of community.
