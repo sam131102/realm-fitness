@@ -18,7 +18,8 @@ function Contact() {
           <p className="mb-4">📍 201-2544 Enterprise Way, Kelowna, BC</p>
 
           <h2 className="text-2xl font-bold text-[#C6962C] mb-4 mt-8">Call or Email</h2>
-          <p className="mb-2">📞 (250) 793-7477</p>
+          <p className="mb-2">📞 (250) 793-7447</p>
+          <p className="mb-2">📞 (250) 717-0589</p>
           <p className="mb-2">📧 info@therealmfitnesskelowna.com</p>
 
           <h2 className="text-2xl font-bold text-[#C6962C] mb-4 mt-8">Hours</h2>
