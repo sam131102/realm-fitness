@@ -16,7 +16,8 @@ function Layout({ children }) {
                     <nav className="hidden lg:flex flex-1  justify-end space-x-4 text-white text-lg font-semibold">
                         <Link to="/about" className="cursor-pointer hover:text-[#C6962C] p-2">About Us</Link>
                         <Link to="/contact" className="cursor-pointer hover:text-[#C6962C] p-2">Contact Us</Link>
-                        <Link to="/memberships" className="bg-[#C6962C] rounded-3xl p-2">Memberships</Link>
+                        <Link to="/memberships" className="cursor-pointer hover:text-[#C6962C] p-2">Memberships</Link>
+                        <Link to="/signup" className="bg-[#C6962C] rounded-3xl p-2">Sign Up Today</Link>
                     </nav>
                     {/* Dropdown Menu for Smaller Screens */}
                     {isMenuOpen && (
@@ -24,7 +25,8 @@ function Layout({ children }) {
                             <ul className="flex flex-col items-center space-y-2 py-4 text-white">
                                 <Link to="/about" className="cursor-pointer hover:text-[#C6962C] p-2">About Us</Link>
                                 <Link to="/contact" className="cursor-pointer hover:text-[#C6962C] p-2">Contact Us</Link>
-                                <Link to="/memberships" className="bg-[#C6962C] rounded-3xl p-2">Memberships</Link>
+                                <Link to="/memberships" className="cursor-pointer hover:text-[#C6962C] p-2">Memberships</Link>
+                                <Link to="/signup" className="bg-[#C6962C] rounded-3xl p-2">Sign Up Today</Link>
                             </ul>
                         </nav>
                     )}

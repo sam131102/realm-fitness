@@ -9,6 +9,7 @@ import Menu from "./pages/Menu";
 import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
 import Accessibility from './pages/Accessibility';
+import SignUp from "./pages/SignUp";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/accessibility" element={<Accessibility />} />
+          <Route path="/signup" element={<SignUp />} />
         </Routes>
       </Layout>
     </Router>
