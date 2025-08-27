@@ -47,6 +47,13 @@ function Memberships() {
       options: [
         "• 10 Visit Punch Pass"
       ]
+    },
+    {
+      title: "5 Punch Pass",
+      price: "$90",
+      options: [
+        "• 5 Visit Punch Pass"
+      ]
     }
   ];
 

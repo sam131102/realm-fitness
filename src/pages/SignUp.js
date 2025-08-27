@@ -31,7 +31,7 @@ function SignUp() {
 
       <div className="text-center">
         <a
-          href="https://www.theactualsignupform.com" // ← Replace with real URL
+          href="https://onlinejoin.abcfitness.com/signup/plan?club=31733&club" // ← Replace with real URL
           target="_blank"
           rel="noopener noreferrer"
           className="bg-[#C6962C] text-black px-6 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-600 transition"
