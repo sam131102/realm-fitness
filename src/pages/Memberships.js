@@ -59,7 +59,7 @@ function Memberships() {
       title: "Drop-in",
       price: "$25",
       options: [
-        "• Drop-in
+        "• Drop-in"
       ]
     }
   ];
