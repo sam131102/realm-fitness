@@ -55,6 +55,13 @@ function Memberships() {
         "• 5 Visit Punch Pass"
       ]
     }
+    {
+      title: "Drop-in",
+      price: "$25",
+      options: [
+        "• Drop-in
+      ]
+    }
   ];
 
   return (
