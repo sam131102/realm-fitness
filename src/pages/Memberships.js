@@ -36,7 +36,7 @@ function Memberships() {
     },
     {
       title: "Student Membership",
-      price: "$73/month",
+      price: "$77/month",
       options: [
         "• 6-Month Commitment Required"
       ]
