@@ -10,11 +10,13 @@ import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
 import Accessibility from './pages/Accessibility';
 import SignUp from "./pages/SignUp";
+import ChatbotWidget from "./components/ChatbotWidget";
 
 function App() {
   return (
     <Router>
       <Layout>
+        <ChatbotWidget />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
