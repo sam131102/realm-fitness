@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+public/videos/source-4k.mp4
+public/videos/.Rhistory
+public/videos/README.md

@@ -17,6 +17,14 @@ function Layout({ children }) {
                         <Link to="/about" className="cursor-pointer hover:text-[#C6962C] p-2">About Us</Link>
                         <Link to="/contact" className="cursor-pointer hover:text-[#C6962C] p-2">Contact Us</Link>
                         <Link to="/memberships" className="cursor-pointer hover:text-[#C6962C] p-2">Memberships</Link>
+                        <a
+                            href="https://realmliftingclubkelowna.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-[#C6962C] rounded-3xl p-2"
+                        >
+                            Realm Lifting Club - Apparel
+                        </a>
                         <Link to="/signup" className="bg-[#C6962C] rounded-3xl p-2">Sign Up Today</Link>
                     </nav>
                     {/* Dropdown Menu for Smaller Screens */}
@@ -26,6 +34,14 @@ function Layout({ children }) {
                                 <Link to="/about" className="cursor-pointer hover:text-[#C6962C] p-2">About Us</Link>
                                 <Link to="/contact" className="cursor-pointer hover:text-[#C6962C] p-2">Contact Us</Link>
                                 <Link to="/memberships" className="cursor-pointer hover:text-[#C6962C] p-2">Memberships</Link>
+                                <a
+                                    href="https://realmliftingclubkelowna.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-[#C6962C] rounded-3xl p-2"
+                                >
+                                    Realm Lifting Club - Apparel
+                                </a>
                                 <Link to="/signup" className="bg-[#C6962C] rounded-3xl p-2">Sign Up Today</Link>
                             </ul>
                         </nav>

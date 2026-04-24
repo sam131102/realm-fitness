@@ -1,12 +1,35 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { useRef } from "react";
 
 
 function Home() {
     const scrollToNextSection = () => {
         document.getElementById("about-us").scrollIntoView({ behavior: "smooth" });
     };
+
+    // Hold the page behind a loader until the hero video is ready to play.
+    const [videoReady, setVideoReady] = useState(false);
+    const videoRef = useRef(null);
+
+    useEffect(() => {
+        // If the video is already cached and fires canPlay before React attaches
+        // the handler, catch that case on mount.
+        if (videoRef.current && videoRef.current.readyState >= 3) {
+            setVideoReady(true);
+        }
+        // Safety net: never block the site for more than 6s, even on slow networks.
+        const fallback = setTimeout(() => setVideoReady(true), 6000);
+        return () => clearTimeout(fallback);
+    }, []);
+
+    // Prevent background scroll while the loader is visible.
+    useEffect(() => {
+        if (!videoReady) {
+            const prev = document.body.style.overflow;
+            document.body.style.overflow = "hidden";
+            return () => { document.body.style.overflow = prev; };
+        }
+    }, [videoReady]);
 
     const reviews = [
         {
@@ -85,26 +108,61 @@ function Home() {
     };
 
     return (
-        <div className="container mx-auto">
-            {/* Intro Section */}
-            <section className="h-[calc(100vh-6rem)] bg-black text-white flex flex-col justify-between items-center px-8">
+      <div>
+        {/* Intro Section */}
+        <section className="relative h-[calc(100vh-6rem)] bg-black text-white overflow-hidden">
+            {/* Looping background video */}
+            <video
+                ref={videoRef}
+                className="absolute top-0 left-0 w-screen h-full object-cover"
+                src="/videos/realm-edit.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="auto"
+                aria-hidden="true"
+                onCanPlay={() => setVideoReady(true)}
+                onError={() => setVideoReady(true)}
+            />
+            {/* Dark overlay to keep branding readable over the video */}
+            <div className="absolute inset-0 bg-black/40 z-10" aria-hidden="true" />
+            {/* Foreground branding */}
+            <div className="relative z-20 h-full flex flex-col justify-between items-center px-8">
                 <div className="flex-grow flex items-center justify-center">
                     <img src="/the_realm.png" alt="The Realm" className="max-w-full h-auto mb-10" />
                 </div>
                 <div className="flex flex-col items-center mt-10 mb-6">
                     <img src="/welcome.png" alt="Welcome to The Realm" className="w-80 h-auto mb-4" />
-                    <button 
-                        onClick={scrollToNextSection} 
+                    <button
+                        onClick={scrollToNextSection}
                         className="mt-4 px-6 py-2 transition duration-300"
                     >
-                        <img 
-                        src="/mini_logo.png" 
-                        alt="logo" 
+                        <img
+                        src="/mini_logo.png"
+                        alt="logo"
                         className="h-auto animate-bounce"
                         />
                     </button>
                 </div>
-            </section>
+            </div>
+        </section>
+        <div className="container mx-auto">
+            {/* Full-screen loader — hides the site until the hero video is ready */}
+            {!videoReady && (
+                <div
+                    className="fixed inset-0 z-[100] bg-black flex items-center justify-center"
+                    role="status"
+                    aria-live="polite"
+                    aria-label="Loading"
+                >
+                    <img
+                        src="/mini_logo.png"
+                        alt="Loading Realm Fitness"
+                        className="h-24 w-auto animate-pulse"
+                    />
+                </div>
+            )}
 
             {/* About + Reviews Combined Section */}
             <section id="about-us" className="scroll-mt-20 bg-black text-white px-6 lg:px-16 py-20 sm:py-24">
@@ -254,6 +312,7 @@ function Home() {
               </div>
             </section>
         </div>
+      </div>
     );
 }
 
