@@ -131,7 +131,7 @@ function Home() {
                     <img src="/the_realm.png" alt="The Realm" className="max-w-full h-auto mb-10" />
                 </div>
                 <div className="flex flex-col items-center mt-10 mb-6">
-                    <img src="/welcome.png" alt="Welcome to The Realm" className="w-80 h-auto mb-4" />
+                    <img src="/welcome.svg" alt="Welcome to The Realm" className="w-80 h-auto mb-4" />
                     <button
                         onClick={scrollToNextSection}
                         className="mt-4 px-6 py-2 transition duration-300"
