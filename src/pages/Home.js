@@ -125,8 +125,6 @@ function Home() {
                 onCanPlay={() => setVideoReady(true)}
                 onError={() => setVideoReady(true)}
             />
-            {/* Dark overlay to keep branding readable over the video */}
-            //<div className="absolute inset-0 bg-black/40 z-10" aria-hidden="true" />
             {/* Foreground branding */}
             <div className="relative z-20 h-full flex flex-col justify-between items-center px-8">
                 <div className="flex-grow flex items-center justify-center">
